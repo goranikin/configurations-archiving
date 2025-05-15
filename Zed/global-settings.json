@@ -1,0 +1,56 @@
+{
+  // Basic configs
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2"
+  },
+  "vim_mode": false,
+  "base_keymap": "JetBrains",
+  "ui_font_size": 18,
+  "buffer_font_size": 17,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark Soft"
+  },
+  "autosave": "on_focus_change",
+  "restore_on_startup": "last_workspace",
+
+  // apply JSX code style on MDX file.
+  "language_overrides": {
+    "MDX": {
+      "file_types": [".mdx"],
+      "grammar": "source.markdown.jsx"
+    }
+  },
+
+  // language configs (Python, Typescript, Javascript)
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "format_on_save": "on"
+    },
+    "Markdown": {
+      "remove_trailing_whitespace_on_save": false
+    },
+    "MDX": {
+      "remove_trailing_whitespace_on_save": false
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  // languages configuration
+  // Python | TS | JS
+  "languages": {
+    // add ty when it'll be served
+    "Python": {
+      "language_servers": ["ruff"],
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true,
+            "source.addMissingImports.ruff": true,
+            "source.sortImports.ruff": true
+          }
+        },
+        {
+          "language_server": { "name": "ruff" }
+        }
+      ]
+    },
+    // eslint, prettier
+    "TypeScript": {
+      "formatter": {
+        "language_server": { "name": "biome" }
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "language_server": { "name": "biome" }
+      }
+    }
+  },
+
+  // Language server protocol
+  "lsp": {
+    "biome": {
+      "initialization_options": {
+        "enableFormatter": true,
+        "lspFormatter": true,
+        "enableLinting": true
+      }
+    },
+    "eslint": {
+      "initialization_options": {
+        "validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ]
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python.pythonPath": ".venv/bin/python"
+      }
+    }
+  }
+}
