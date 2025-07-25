@@ -1,8 +1,6 @@
 {
   // languages configuration
-  // Python | TS | JS
   "languages": {
-    // add ty when it'll be served
     "Python": {
       "language_servers": ["ruff", "basedpyright", "!pyright"],
       "formatter": [
@@ -35,7 +33,8 @@
           "diagnosticMode": "workspace",
           "inlayHints": {
             "callArgumentNames": false
-          }
+          },
+          "enablePipEightyTwo": true
         }
       }
     }
